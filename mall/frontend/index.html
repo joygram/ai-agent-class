@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반다이남코코리아몰 클론</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans KR', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Top Utility Nav -->
+      <div class="flex justify-end space-x-4 py-2 text-xs text-gray-500 border-b border-gray-100">
+        <a href="#" class="hover:text-blue-600 transition">로그인</a>
+        <a href="#" class="hover:text-blue-600 transition">회원가입</a>
+        <a href="#" class="hover:text-blue-600 transition">마이페이지</a>
+        <a href="#" class="hover:text-blue-600 transition">고객센터</a>
+      </div>
+      
+      <!-- Main Header Area -->
+      <div class="flex items-center justify-between py-6">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="#" class="text-2xl font-black text-blue-800 tracking-tighter">
+            BANDAI NAMCO <span class="text-red-600">KOREA MALL</span>
+          </a>
+        </div>
+        
+        <!-- Search -->
+        <div class="flex-1 max-w-2xl px-12">
+          <div class="relative">
+            <input type="text" class="w-full bg-gray-100 rounded-full py-3 px-6 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition" placeholder="검색어를 입력해주세요">
+            <button class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-blue-600">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Cart / Icons -->
+        <div class="flex items-center space-x-6">
+          <a href="#" class="text-gray-600 hover:text-blue-600 transition flex flex-col items-center group">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:-translate-y-1 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
+            <span class="text-xs mt-1 font-medium">장바구니</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="flex space-x-8 py-4 font-bold text-gray-800">
+        <a href="#" class="hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 transition pb-1">신상품</a>
+        <a href="#" class="hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 transition pb-1">건프라</a>
+        <a href="#" class="hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 transition pb-1">애니프라</a>
+        <a href="#" class="hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 transition pb-1">피규어</a>
+        <a href="#" class="hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 transition pb-1">토이</a>
+        <a href="#" class="hover:text-blue-600 border-b-2 border-transparent hover:border-blue-600 transition pb-1 text-red-600">기획전/이벤트</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gray-900 overflow-hidden">
+    <!-- Main Banner Image Placeholder -->
+    <div class="h-[500px] w-full bg-gradient-to-r from-blue-900 to-indigo-900 flex items-center justify-center relative">
+      <div class="absolute inset-0 bg-black opacity-30"></div>
+      <div class="relative z-10 text-center text-white px-4">
+        <h1 class="text-5xl font-extrabold mb-4 drop-shadow-lg tracking-tight">NEW GUNDAM SEED DESTINY</h1>
+        <p class="text-xl mb-8 font-light max-w-2xl mx-auto">새로운 메탈빌드 시리즈 예약 개시. 지금 바로 확인하세요.</p>
+        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+          자세히 보기
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content - Product Grid -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="flex justify-between items-end mb-8">
+      <div>
+        <h2 class="text-3xl font-bold text-gray-900">NEW ARRIVALS</h2>
+        <p class="text-gray-500 mt-2">이번 주 새롭게 입고된 상품</p>
+      </div>
+      <a href="#" class="text-blue-600 hover:underline font-medium">전체보기 &rarr;</a>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Item 1 -->
+      <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden group cursor-pointer border border-gray-100">
+        <div class="relative aspect-square bg-gray-100 overflow-hidden">
+          <div class="absolute inset-0 bg-gray-200 animate-pulse"></div>
+          <!-- Placeholder for image -->
+          <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-medium">이미지 준비중</div>
+          
+          <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">NEW</div>
+          
+          <!-- Hover Overlay -->
+          <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <button class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+              장바구니 담기
+            </button>
+          </div>
+        </div>
+        <div class="p-6">
+          <p class="text-xs text-blue-600 font-bold mb-1">건프라 > MG</p>
+          <h3 class="font-bold text-gray-900 mb-2 leading-tight group-hover:text-blue-600 transition">MG 1/100 건담 발바토스 루프스 렉스</h3>
+          <div class="flex items-center space-x-2">
+            <p class="text-xl font-black text-gray-900">60,000<span class="text-sm font-normal text-gray-500 ml-1">원</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden group cursor-pointer border border-gray-100">
+        <div class="relative aspect-square bg-gray-100 overflow-hidden">
+          <div class="absolute inset-0 bg-gray-200 animate-pulse"></div>
+          <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-medium">이미지 준비중</div>
+          <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">NEW</div>
+          <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <button class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+              장바구니 담기
+            </button>
+          </div>
+        </div>
+        <div class="p-6">
+          <p class="text-xs text-blue-600 font-bold mb-1">피규어 > S.H.Figuarts</p>
+          <h3 class="font-bold text-gray-900 mb-2 leading-tight group-hover:text-blue-600 transition">S.H.Figuarts 손오공 슈퍼사이어인</h3>
+          <div class="flex items-center space-x-2">
+            <p class="text-xl font-black text-gray-900">45,000<span class="text-sm font-normal text-gray-500 ml-1">원</span></p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Item 3 -->
+      <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden group cursor-pointer border border-gray-100">
+        <div class="relative aspect-square bg-gray-100 overflow-hidden">
+          <div class="absolute inset-0 bg-gray-200 animate-pulse"></div>
+          <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-medium">이미지 준비중</div>
+          <div class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">BEST</div>
+          <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <button class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+              장바구니 담기
+            </button>
+          </div>
+        </div>
+        <div class="p-6">
+          <p class="text-xs text-blue-600 font-bold mb-1">건프라 > RG</p>
+          <h3 class="font-bold text-gray-900 mb-2 leading-tight group-hover:text-blue-600 transition">RG 1/144 뉴 건담 티타늄 피니시</h3>
+          <div class="flex items-center space-x-2">
+            <p class="text-xl font-black text-gray-900">110,000<span class="text-sm font-normal text-gray-500 ml-1">원</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden group cursor-pointer border border-gray-100">
+        <div class="relative aspect-square bg-gray-100 overflow-hidden">
+          <div class="absolute inset-0 bg-gray-200 animate-pulse"></div>
+          <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-medium">이미지 준비중</div>
+          <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <button class="bg-white text-gray-900 font-bold py-2 px-6 rounded-full transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+              장바구니 담기
+            </button>
+          </div>
+        </div>
+        <div class="p-6">
+          <p class="text-xs text-blue-600 font-bold mb-1">애니프라 > 포켓프라</p>
+          <h3 class="font-bold text-gray-900 mb-2 leading-tight group-hover:text-blue-600 transition">포켓프라 퀵!! 01 피카츄</h3>
+          <div class="flex items-center space-x-2">
+            <p class="text-xl font-black text-gray-900">7,200<span class="text-sm font-normal text-gray-500 ml-1">원</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
